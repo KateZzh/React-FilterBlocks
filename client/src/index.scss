@@ -7,12 +7,16 @@
 }
 
 body {
-  max-width: 1220px;
-  margin: 5% auto;
+  margin: auto;
   border-radius: 12px;
   background: #f7f7f8;
 }
 
 a {
   text-decoration: none;
+}
+
+html {
+  width: 100vw;
+  overflow-x: hidden;
 }

@@ -1,7 +1,8 @@
 import { useParams } from "react-router-dom";
 import array from "../../storage/storage.json";
 import { useState, useEffect } from "react";
-import style from "./VacancyPage.module.scss";
+import style from "./vacancyPage.module.scss";
+import Header from "../../components/Header/Header";
 
 const VacancyPage = () => {
   const { id } = useParams();
@@ -19,6 +20,8 @@ const VacancyPage = () => {
 
   return (
     <>
+      <Header />
+
       <div className={style.wrapper}>
         <h2>{cardInfo.header}</h2>
 

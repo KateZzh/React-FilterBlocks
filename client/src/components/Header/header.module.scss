@@ -1,0 +1,39 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  background: var(--White, #fff);
+  justify-content: space-evenly;
+
+  div {
+    display: flex;
+
+    .imgLogo {
+      background-image: url(./assets/imgLogoHeader.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 30px;
+      height: 30px;
+    }
+
+    h2 {
+      padding-left: 12px;
+      color: var(--Black, #232134);
+      font: 600 24px Inter;
+      line-height: normal;
+      letter-spacing: -0.48px;
+    }
+  }
+
+  nav {
+    display: flex;
+    padding: 32px 0;
+    gap: 60px;
+
+    p {
+      color: var(--Black, #232134);
+      font-feature-settings: "clig" off, "liga" off;
+      font: 400 16px Inter;
+      line-height: 20px;
+    }
+  }
+}

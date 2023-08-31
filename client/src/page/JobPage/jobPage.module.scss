@@ -1,60 +1,66 @@
 .wrapper {
-  border-radius: 12px;
-  border: 1px solid var(--grey-200, #eaebed);
-  background: #fff;
-  margin-top: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding: 24px;
+  max-width: 773px;
+  margin: 40px auto;
 
-  h2 {
-    color: var(--blue-main-500, #5e96fc);
-    font: 600 20px Inter;
-    line-height: normal;
-  }
-
-  .info {
+  .wrapperJob {
+    border-radius: 12px;
+    border: 1px solid var(--grey-200, #eaebed);
+    background: #fff;
+    margin-top: 16px;
     display: flex;
+    flex-direction: column;
     gap: 12px;
+    padding: 24px;
+    max-width: 773px;
 
-    div {
-      color: var(--black, #232134);
-      font-feature-settings: "clig" off, "liga" off;
-      font: 600 16px Inter;
-      line-height: 20px;
+    h2 {
+      color: var(--blue-main-500, #5e96fc);
+      font: 600 20px Inter;
+      line-height: normal;
+    }
 
-      &::after {
-        content: "•";
-        padding-left: 12px;
-        color: var(--grey-600, #7b7c88);
+    .info {
+      display: flex;
+      gap: 12px;
+
+      div {
+        color: var(--black, #232134);
+        font-feature-settings: "clig" off, "liga" off;
+        font: 600 16px Inter;
+        line-height: 20px;
+
+        &::after {
+          content: "•";
+          padding-left: 12px;
+          color: var(--grey-600, #7b7c88);
+        }
+      }
+
+      p {
+        color: var(--black, #232134);
+        font-feature-settings: "clig" off, "liga" off;
+        font: 600 16px Inter;
+        line-height: 20px; /* 125% */
       }
     }
 
-    p {
-      color: var(--black, #232134);
-      font-feature-settings: "clig" off, "liga" off;
-      font: 600 16px Inter;
-      line-height: 20px; /* 125% */
-    }
-  }
+    .location {
+      display: flex;
 
-  .location {
-    display: flex;
+      .logoLocation {
+        background-image: url(./assets/logoLocation.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 20px;
+        height: 20px;
+      }
 
-    .logoLocation {
-      background-image: url(./assets/logoLocation.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 20px;
-      height: 20px;
-    }
-
-    p {
-      color: var(--black, #232134);
-      font: 400 16px Inter;
-      line-height: normal;
-      padding-left: 8px;
+      p {
+        color: var(--black, #232134);
+        font: 400 16px Inter;
+        line-height: normal;
+        padding-left: 8px;
+      }
     }
   }
 }
