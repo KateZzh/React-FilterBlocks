@@ -7,21 +7,23 @@
   flex-direction: column;
   gap: 12px;
   padding: 24px;
+  max-width: 773px;
+  margin: auto;
 
   h2 {
-    color: var(--blue-main-500, #5e96fc);
-    font: 600 20px Inter;
+    font: 700 28px Inter;
     line-height: normal;
+    color: var(--Black, #232134);
   }
 
   .info {
     display: flex;
-    gap: 12px;
+    gap: 16px;
 
     div {
       color: var(--black, #232134);
       font-feature-settings: "clig" off, "liga" off;
-      font: 600 16px Inter;
+      font: 700 20px Inter;
       line-height: 20px;
 
       &::after {
@@ -34,8 +36,8 @@
     p {
       color: var(--black, #232134);
       font-feature-settings: "clig" off, "liga" off;
-      font: 600 16px Inter;
-      line-height: 20px; /* 125% */
+      font: 400 20px Inter;
+      line-height: 20px;
     }
   }
 
@@ -53,8 +55,42 @@
     p {
       color: var(--black, #232134);
       font: 400 16px Inter;
-      line-height: normal;
+      line-height: 140%;
       padding-left: 8px;
+    }
+  }
+}
+
+.cardWrapper {
+  border-radius: 12px;
+  border: 1px solid var(--Grey-200, #eaebed);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  max-width: 773px;
+  margin: 20px auto;
+
+  .responsibilities,
+  .requirements,
+  .conditions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h2 {
+      color: var(--Black, #232134);
+      font-feature-settings: "clig" off, "liga" off;
+      font: 700 20px Inter;
+      line-height: 20px;
+    }
+
+    ul {
+      color: var(--Black, #232134);
+      font: 400 16px Inter;
+      line-height: 140%;
+      padding: 16px 24px 0 20px;
     }
   }
 }
