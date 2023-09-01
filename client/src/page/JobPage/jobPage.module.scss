@@ -39,7 +39,7 @@
       p {
         color: var(--black, #232134);
         font-feature-settings: "clig" off, "liga" off;
-        font: 600 16px Inter;
+        font: 400 16px Inter;
         line-height: 20px; /* 125% */
       }
     }
@@ -62,5 +62,11 @@
         padding-left: 8px;
       }
     }
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
   }
 }
